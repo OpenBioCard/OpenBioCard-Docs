@@ -1,0 +1,142 @@
+/**
+ * Light & Soft Green Theme
+ * 简洁淡绿色系，统一浅绿色按钮和超链接
+ */
+
+/* ========================
+   Light Mode
+   ======================== */
+:root {
+  /* Brand 柔和浅绿色 */
+  --vp-c-brand: #6aa97a;
+  --vp-c-brand-light: #8acfa0;
+  --vp-c-brand-lighter: #b3e0c1;
+  --vp-c-brand-dark: #4e7c5e;
+  --vp-c-brand-darker: #3a5a45;
+
+  /* Text */
+  --vp-c-text-1: #2b2b2b;
+  --vp-c-text-2: #555555;
+  --vp-c-text-3: #888888;
+
+  /* Homepage */
+  --vp-home-hero-name-color: var(--vp-c-brand);
+  --vp-home-hero-text-color: #3a3a3a;
+  --vp-home-hero-tagline-color: #666666;
+
+  /* Buttons */
+  --vp-home-hero-cta-text: #ffffff;
+  --vp-home-hero-cta-bg: var(--vp-c-brand);
+  --vp-home-hero-cta-hover-bg: var(--vp-c-brand-dark);
+
+  --vp-home-hero-alt-text: var(--vp-c-brand-dark);
+  --vp-home-hero-alt-bg: transparent;
+  --vp-home-hero-alt-hover-bg: rgba(106, 169, 122, 0.1);
+
+  /* Background */
+  --vp-c-bg: #fafaf5;
+  --vp-c-bg-alt: #f2f5f0;
+  --vp-c-bg-soft: #f5f8f2;
+
+  /* Borders */
+  --vp-c-border: #e0e4de;
+  --vp-c-divider: #e6e9e3;
+
+  /* Links */
+  --vp-c-link: var(--vp-c-brand);
+  --vp-c-link-hover: var(--vp-c-brand-light);
+}
+
+/* ========================
+   Dark Mode
+   ======================== */
+.dark {
+  /* Brand 浅绿色灰调 */
+  --vp-c-brand: #a0c9a3;
+  --vp-c-brand-light: #c2e0c2;
+  --vp-c-brand-lighter: #e0f0e1;
+  --vp-c-brand-dark: #7a9f74;
+  --vp-c-brand-darker: #5b7155;
+
+  /* Text */
+  --vp-c-text-1: #f0f0f0;
+  --vp-c-text-2: #cccccc;
+  --vp-c-text-3: #999999;
+
+  /* Homepage */
+  --vp-home-hero-name-color: var(--vp-c-brand);
+  --vp-home-hero-text-color: #dddddd;
+  --vp-home-hero-tagline-color: #bbbbbb;
+
+  /* Buttons */
+  --vp-home-hero-cta-text: #000000;
+  --vp-home-hero-cta-bg: var(--vp-c-brand-light);
+  --vp-home-hero-cta-hover-bg: var(--vp-c-brand);
+
+  --vp-home-hero-alt-text: var(--vp-c-brand);
+  --vp-home-hero-alt-bg: transparent;
+  --vp-home-hero-alt-hover-bg: rgba(160, 201, 163, 0.12);
+
+  /* Background */
+  --vp-c-bg: #1c1e1a;
+  --vp-c-bg-alt: #242724;
+  --vp-c-bg-soft: #2b2e2a;
+
+  /* Borders */
+  --vp-c-border: #353935;
+  --vp-c-divider: #3a3e3a;
+
+  /* Links */
+  --vp-c-link: var(--vp-c-brand);
+  --vp-c-link-hover: var(--vp-c-brand-light);
+}
+
+/* ========================
+   Global Styling
+   ======================== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--vp-c-text-1);
+}
+
+/* 超链接 */
+a {
+  color: var(--vp-c-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--vp-c-link-hover);
+}
+
+/* 主页按钮 */
+.vp-home-hero-cta {
+  color: var(--vp-home-hero-cta-text);
+  background-color: var(--vp-home-hero-cta-bg);
+  transition: background-color 0.2s ease;
+}
+
+.vp-home-hero-cta:hover {
+  background-color: var(--vp-home-hero-cta-hover-bg);
+}
+
+.vp-home-hero-alt {
+  color: var(--vp-home-hero-alt-text);
+  background-color: var(--vp-home-hero-alt-bg);
+  transition: background-color 0.2s ease;
+}
+
+.vp-home-hero-alt:hover {
+  background-color: var(--vp-home-hero-alt-hover-bg);
+}
+
+/* 代码块 & 自定义块 */
+.vp-code-group,
+.vp-code {
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+.vp-doc .custom-block {
+  background: var(--vp-c-bg-alt) !important;
+  border-color: var(--vp-c-border) !important;
+}

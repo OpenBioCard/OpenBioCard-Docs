@@ -10,20 +10,24 @@ import { calculateSidebar } from '@nolebase/vitepress-plugin-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "OpenBioCard-Docs",
+  title: "OpenBioCard Docs",
   description: "OpenBioCard's docs",
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: calculateSidebar([ 
-      'Notes', 
-      { folderName: 'Articles', separate: true }, 
+    sidebar: calculateSidebar([
+      'Notes',
+      { folderName: 'Articles', separate: true },
     ]),
-    
+
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }

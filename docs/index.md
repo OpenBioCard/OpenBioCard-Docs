@@ -6,6 +6,9 @@ hero:
   name: "OpenBioCard-Docs"
   text: "OpenBioCard's docs"
   tagline: My great project tagline
+  logo: /logo.svg
+  image:
+    src: /logo.svg
   actions:
     - theme: brand
       text: Markdown Examples

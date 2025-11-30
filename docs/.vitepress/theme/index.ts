@@ -1,18 +1,20 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme as ThemeConfig } from 'vitepress'
-import { 
-  NolebaseInlineLinkPreviewPlugin, 
+import './style.css'
+import {
+  NolebaseInlineLinkPreviewPlugin,
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
-import { 
-  NolebaseGitChangelogPlugin 
+import {
+  NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
-import { 
-  NolebaseEnhancedReadabilitiesMenu, 
-  NolebaseEnhancedReadabilitiesScreenMenu, 
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 export const Theme: ThemeConfig = {
